@@ -21,12 +21,4 @@ fn main() {
             )
         )
         .run();
-
-    //Start up various services
-    // bevy_ecs::setup();
-    // axum_server::setup();
-    // mqtt_integration::setup();
-    // device_interface::setup();
-    // device_state_management::setup();
-    // surrealdb_integration::setup();
 }

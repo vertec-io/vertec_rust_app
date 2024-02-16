@@ -60,6 +60,9 @@ pub fn setup(mut commands: Commands) {
             println!("Found running EMQX: {}", &running_containers);
         }
         
+    } else if mqtt_broker_url == "none" {
+        println!("MQTT broker disabled");
+        return
     } else {
         println!("Connecting to remote MQTT Broker");
         mqtt_host = env::var("REMOTE_MQTT_HOST").expect("REMOTE_MQTT_HOST not set");
